@@ -4,7 +4,8 @@ int binary_search(int *arr,int n, int k)
 {
     int low = 0;
     int high = n-1;
-   int mid = (low+high)/2 ;
+//    int mid = (low+high)/2 ;//!wrong 
+    int mid = low + ((high-low)>>1);//!correct way to do it solve the in
     while(low<high)
     {
         mid = (high+low)/2;
@@ -19,9 +20,12 @@ int binary_search(int *arr,int n, int k)
         else{
             high = mid -1 ;
         }
+
+
     }
     return -1;
- 
+
+
 
 }
 int main()

@@ -2,7 +2,6 @@
 Difficulty Level : Medium
 Last Updated : 13 Apr, 2021
 Given a sorted array arr[] and a value X, find the k closest elements to X in arr[]. 
-
 Examples: 
 
 Input: K = 4, X = 35
@@ -118,7 +117,6 @@ int main()
             printf("%d, ",arr[right]);
             right++;
         }
-
 
        // now I am confused with go with two pointer or just maintain the one pointer to the things  
        //! focus lets focus on the closest the element then we will find next x-1 elements

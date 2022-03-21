@@ -80,7 +80,6 @@ int main()
             mx = Arr[j];
         }
     } 
-
     int start , end;
     start = 0;
     end  =0;
